@@ -30,9 +30,9 @@ staticdir=os.path.join(BASE_DIR,'static')
 SECRET_KEY = '64sh3q#91b2*2e(39h##^@+1j)vkuz(3!q3s)din8z0f&8flnr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -53,6 +53,7 @@ AUTH_USER_MODEL='testapp.signup'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
