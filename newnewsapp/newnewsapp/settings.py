@@ -32,7 +32,7 @@ SECRET_KEY = '64sh3q#91b2*2e(39h##^@+1j)vkuz(3!q3s)din8z0f&8flnr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','samasthnewsapp.herokuapp.com']
 
 
 # Application definition
